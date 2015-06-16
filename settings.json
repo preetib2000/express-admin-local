@@ -1,0 +1,1082 @@
+{
+    "sample": {
+        "slug": "sample",
+        "table": {
+            "name": "sample",
+            "pk": "id",
+            "verbose": "sample"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "ameth_assets": {
+        "slug": "ameth_assets",
+        "table": {
+            "name": "ameth_assets",
+            "pk": "asset_id",
+            "verbose": "ameth_assets"
+        },
+        "columns": [
+            {
+                "name": "asset_id",
+                "verbose": "asset_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "friendly_name",
+                "verbose": "friendly_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "description",
+                "verbose": "description",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "system_type",
+                "verbose": "system_type",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(32)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "tech_contact",
+                "verbose": "tech_contact",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "notes",
+                "verbose": "notes",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "business_contact",
+                "verbose": "business_contact",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "prod_url",
+                "verbose": "prod_url",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "system_size",
+                "verbose": "system_size",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "revenue_generated",
+                "verbose": "revenue_generated",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "usage",
+                "verbose": "usage",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "language",
+                "verbose": "language",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "operating_system",
+                "verbose": "operating_system",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_penton_owned",
+                "verbose": "is_penton_owned",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "start_year",
+                "verbose": "start_year",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(32)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "was_created_in_house",
+                "verbose": "was_created_in_house",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "backend_CMS",
+                "verbose": "backend_CMS",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "web_server",
+                "verbose": "web_server",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "database",
+                "verbose": "database",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "ecommerce_solution",
+                "verbose": "ecommerce_solution",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "has_mobile_site",
+                "verbose": "has_mobile_site",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "mobile",
+                "verbose": "mobile",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_hosted_by_penton",
+                "verbose": "is_hosted_by_penton",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "mobile_platform",
+                "verbose": "mobile_platform",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "monitor_system",
+                "verbose": "monitor_system",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "market",
+                "verbose": "market",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "franchise",
+                "verbose": "franchise",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "group",
+                "verbose": "group",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "analytics",
+                "verbose": "analytics",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "uses_omniture",
+                "verbose": "uses_omniture",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "uses_eloqua",
+                "verbose": "uses_eloqua",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "uses_solr",
+                "verbose": "uses_solr",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "has_digital_edition",
+                "verbose": "has_digital_edition",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "has_print_edition",
+                "verbose": "has_print_edition",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "mail_system",
+                "verbose": "mail_system",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "product_manager",
+                "verbose": "product_manager",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "vendor_involvement",
+                "verbose": "vendor_involvement",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "director",
+                "verbose": "director",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "svp",
+                "verbose": "svp",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "geolocation",
+                "verbose": "geolocation",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "ameth_domain_stats": {
+        "slug": "ameth_domain_stats",
+        "table": {
+            "name": "ameth_domain_stats",
+            "pk": "domain_stats_id",
+            "verbose": "ameth_domain_stats"
+        },
+        "columns": [
+            {
+                "name": "domain_stats_id",
+                "verbose": "domain_stats_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "report_suite_id",
+                "verbose": "report_suite_id",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(128)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "notes",
+                "verbose": "notes",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(128)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "uses_omniture",
+                "verbose": "uses_omniture",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "time_period",
+                "verbose": "time_period",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(256)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "visits",
+                "verbose": "visits",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "models": {
+        "slug": "models",
+        "table": {
+            "name": "models",
+            "pk": "id",
+            "verbose": "models"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "value",
+                "verbose": "value",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "expressProject": {
+        "slug": "expressProject",
+        "table": {
+            "name": "expressProject",
+            "pk": "id",
+            "verbose": "expressProject"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Project Name",
+                "verbose": "Project Name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(200)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "URL",
+                "verbose": "URL",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(200)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "CreatedAt",
+                "verbose": "CreatedAt",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "UpdatedAt",
+                "verbose": "UpdatedAt",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "user": {
+        "slug": "user",
+        "table": {
+            "name": "user",
+            "pk": "id",
+            "verbose": "user"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "username",
+                "verbose": "username",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "password",
+                "verbose": "password",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(50)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    }
+}
