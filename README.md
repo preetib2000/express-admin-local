@@ -1,4 +1,4 @@
-# Express-Admin-LDAP
+# Express-Admin-local
 express-admin using Passport-local Authentication (passport local strategy)
 
 ## Assumption:
