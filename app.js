@@ -269,24 +269,33 @@ function initServer (args) {
 
     // login/logout
     app.get('/login', r.login.get, r.render.admin);
-    app.post('/login', function(req, res, next) {
-        console.log('inside ldappost login');
-        passport.authenticate('ldap-login', function (err, user, info) {
-            var error = err || info;
-            if (error) {
-                console.log('error: ' + error);
-                return res.json(401, error);
-            }
-            if (!user) {
-                console.log('error: ' + 'Something went wrong, please try again');
-                return res.json(404, {message: 'Something went wrong, please try again.'});
-            }
-            // successRedirect : '/success', // redirect to the secure profile section
-            // failureRedirect : '/ldaplogin', // redirect back to the ldaplogin page if there is an error
-            // failureFlash : true // allow flash messages
-        })(req, res, next)
-    });
+//    app.post('/login', function(req, res, next) {
+//        console.log('inside ldappost login');
+//
+//        passport.authenticate('ldap-login', function (err, user, info) {
+//            var error = err || info;
+//            if (error) {
+//                console.log('error: ' + error);
+//                return res.json(401, error);
+//            }
+//            if (!user) {
+//                console.log('error: ' + 'Something went wrong, please try again');
+//                return res.json(404, {message: 'Something went wrong, please try again.'});
+//            }
+//            // successRedirect : '/success', // redirect to the secure profile section
+//            // failureRedirect : '/ldaplogin', // redirect back to the ldaplogin page if there is an error
+//            // failureFlash : true // allow flash messages
+//        })(req, res, next)
+//    });
+    //app.post('/login', passport.authenticate('local-login'));
+
+    app.post('/login', passport.authenticate('local-login', {
+        successRedirect : '/', // redirect to the secure profile section
+        failureRedirect : '/login', // redirect back to the signup page if there is an error
+        failureFlash : true // allow flash messages
+    }));
     app.get('/logout', function(req, res) {
+        req.session.user = null;
         req.logout();
         res.redirect('/login');
     });
@@ -312,6 +321,7 @@ function isLoggedIn(req, res, next) {
     // if user is authenticated in the session, carry on
     if (req.isAuthenticated()) {
         console.log('I am authenticated');
+        req.session.user = {login:true};
         return next();
     }
     // if they aren't redirect them to the home page
