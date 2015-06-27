@@ -322,6 +322,17 @@ function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {
         console.log('I am authenticated');
         req.session.user = {login:true};
+
+        res.locals.show = {
+            error: req.session.error,
+            success: req.session.success
+        };
+        res.locals.username = req.session.username;
+
+        delete req.session.error;
+        delete req.session.success;
+        delete req.session.username;
+
         return next();
     }
     // if they aren't redirect them to the home page
